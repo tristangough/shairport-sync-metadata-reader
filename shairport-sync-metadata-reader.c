@@ -334,7 +334,7 @@ int main(int argc, char *argv[]) {
           case 'conn': //ADDED write name of Airplay client to file
             FILE *fp;
             fp = fopen ("/home/kitchentv/Documents/airplay_temp.txt", "w");
-            fputs("Connected to: \"%s\" \n", fp);
+            fputs("Connected to: \"%s\"\n", fp);
             fclose (fp); //end of ADDED
             printf(
                 "The AirPlay client at \"%s\" is about to connect to this player. (AirPlay 2 only.)\n",
