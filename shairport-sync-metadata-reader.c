@@ -334,8 +334,8 @@ int main(int argc, char *argv[]) {
           case 'conn': //ADDED write name of Airplay client to file
             FILE *fp;
             fp = fopen ("airplay_temp.txt", "w");
-            ap_cli str[] = \"%s\";
-            fputs(ap_cli, fp)
+            ap_cli = \"%s\";
+            fputs(ap_cli, fp);
             fclose (fp); //end of ADDED
             printf(
                 "The AirPlay client at \"%s\" is about to connect to this player. (AirPlay 2 only.)\n",
@@ -344,8 +344,8 @@ int main(int argc, char *argv[]) {
           case 'disc': //ADDED write disconnected to file
             FILE *fp;
             fp = fopen ("airplay_temp.txt", "w");
-            ap_cli str[] = "disconnected";
-            fputs(ap_cli, fp)
+            ap_cli = "disconnected";
+            fputs(ap_cli, fp);
             fclose (fp); //end of ADDED
             printf("The AirPlay client at \"%s\" has disconnected from this player. (AirPlay 2 only.)\n",
                    payload);
